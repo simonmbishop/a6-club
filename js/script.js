@@ -9,7 +9,7 @@ $(function() {
 		if ( age >= 50 ) {
 			$("#form").hide();
 		  	$("#form2").show();
-		  	$("#answer").text("Next Level");
+		  	$("#answer").text("Second Level");
 		  	$("#club-img").attr("src", "images/door.jpg");
 		  	
 
@@ -29,8 +29,8 @@ $(function() {
 		if ( album >= 5 ) {
 			$("#form2").hide();
 			$("#form3").show();
-			$("#answer").text("Next Level");
-			$("#club-img").attr("src", "images/hallway.jpg").css("width", "350px");		
+			$("#answer").text("Third Level");
+			$("#club-img").attr("src", "images/hallway.jpg").css("width", "265px");		
 
 		} else {
 			$("#answer").text("Nope");
@@ -65,19 +65,20 @@ $(function() {
 
 		if ( tobeString === "to be" ) {
 			$("#form4").hide();
-			$("#answer").text("You're in Homie");
-			$("#club-img").attr("src", "https://media.giphy.com/media/3o7WTIrnaKus0mVHUI/giphy.gif");
+			$("#final-answer").text("You're in, Homie");
+			$("#club-img").attr("src", "https://media.giphy.com/media/3o7WTIrnaKus0mVHUI/giphy.gif").css("width", "700px");
 			$("h1").hide();
+			$("#answer").hide();
+			$("#final-answer").show();
 
 		} else {
-			$("#club-img").attr("src", "https://media.giphy.com/media/12MgUpnxEq3ypy/giphy.gif");
+			$("#club-img").attr("src", "https://media.giphy.com/media/12MgUpnxEq3ypy/giphy.gif").css("width", "700px");
 			$("form4").hide();
 			$("h1").hide();
-			$("#answer").text("Boom Boom")
+			$("#answer").text("You're Dead")
 			$("#text-button").hide();
 			$("#tobe").hide();
 			$("#form5").show();
-			
 		} 
 
 		

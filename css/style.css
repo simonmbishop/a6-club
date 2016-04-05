@@ -33,13 +33,13 @@ input {
 }
 
 .answer {
-  font-size: 80px;
+  font-size: 40px;
   color: cyan;
   font-family: 'Lobster';
 }
 
 .answer-text {
-  font-size: 80px;
+  font-size: 40px;
   color: cyan;
   font-family: 'Lobster';
 }
@@ -62,5 +62,14 @@ input {
   font-size: 30px;
   font-family: 'Bangers', cursive;
   color: white;
+
+}
+
+#final-answer {
+  display: none;
+  font-size: 80px;
+  color: cyan;
+  font-family: 'Lobster';
+}
 
 }
