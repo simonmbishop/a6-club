@@ -1,28 +1,19 @@
 $(function() {
-  //All JS goes within these brackets
 
 	$("#bar-submit").click(function(){
-		
-		//select the box with id of age
-		//get the avlue from that box
+	
 		var ageString = $("#age").val();
 
-		//convert string to number
 		var age = parseInt(ageString);
 
-		//check if age is greater than 21
 		if ( age >= 50 ) {
-			//if age is greater than 50, say yes
-			// $("#answer").text("You're in!");
-			// $("#club-img").attr("src", "https://media.giphy.com/media/zyxiqEQb6wTSg/giphy.gif");
 			$("#form").hide();
 		  	$("#form2").show();
 		  	$("#answer").text("Next Level");
-		  	$("#club-img").attr("images/doorway.jpg");
+		  	$("#club-img").attr("src", "images/door.jpg");
 		  	
 
 		} else {
-			//if age is less than 21, self-destruct
 			$("#answer").text("Nope");
 			$("#club-img").attr("src", "https://media.giphy.com/media/pyYi8wDVykenm/giphy.gif"); 
 		}
@@ -85,6 +76,7 @@ $(function() {
 			$("#answer").text("Boom Boom")
 			$("#text-button").hide();
 			$("#tobe").hide();
+			$("#form5").show();
 			
 		} 
 
